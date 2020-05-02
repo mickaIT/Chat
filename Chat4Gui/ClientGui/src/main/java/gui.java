@@ -37,9 +37,9 @@ public class gui {
     static String username;
     static boolean entered = false;
     List<String> receivedMessages;
-    ActionListener listener=new sendMessageButtonListener();
+    ActionListener listener = new sendMessageButtonListener();
 
-    public static boolean yyy = false;
+    public static boolean yyy = true;
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
@@ -49,10 +49,13 @@ public class gui {
                 mainGUI.preDisplay();
                 service = ClientHessian.Client();
             }
-       });
+        });
 
     }
-public static String tmp(){return "dupa";}
+
+    public static String tmp() {
+        return "dupa";
+    }
 
     public void preDisplay() {
         newFrame.setVisible(false);
@@ -100,7 +103,6 @@ public static String tmp(){return "dupa";}
         chatBox.setEditable(false);
         chatBox.setFont(new Font("Serif", Font.PLAIN, 15));
         chatBox.setLineWrap(true);
-        
         mainPanel.add(new JScrollPane(chatBox), BorderLayout.CENTER);
 
         GridBagConstraints left = new GridBagConstraints();
@@ -125,9 +127,21 @@ public static String tmp(){return "dupa";}
         newFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         newFrame.setSize(470, 300);
         newFrame.setVisible(true);
-
+        updateChatBox();
     }
 
+    public void updateChatBox() {
+        {
+            receivedMessages = service.getMessages(username);
+            String chat = "";
+            for (String message : receivedMessages) {
+                chat+=message+"\n";
+            }
+            chatBox.setText(chat);
+
+            service.setChanged(false);
+        }
+    }
 
     class sendMessageButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent event) {
@@ -136,21 +150,13 @@ public static String tmp(){return "dupa";}
             } else if (messageBox.getText().equals(".clear")) {
                 chatBox.setText("Cleared all messages\n");
                 messageBox.setText("");
-            }
-            else {
+            } else {
                 service.writeMessage(messageBox.getText(), username);
                 yyy = service.isChanged();
-                if (yyy) {
-                    {
-                        receivedMessages = service.getMessages(username);
-                        chatBox.setText("");
-                        for (String message : receivedMessages) {
-
-                            chatBox.setText(chatBox.getText() + message + "\n");
-                        }
-                        service.setChanged(false);
-                    }
+                if (yyy) { //żeby nie wyświetlało pierwszej wiadomości
+                    updateChatBox();
                 }
+
                 messageBox.setText("");
             }
             messageBox.requestFocusInWindow();
@@ -165,7 +171,7 @@ public static String tmp(){return "dupa";}
                 System.out.println("No!");
             } else {
                 preFrame.setVisible(false);
-                    display();
+                display();
             }
         }
     }

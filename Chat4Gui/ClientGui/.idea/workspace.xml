@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="656ffd28-1762-4f89-bdbc-5740650f5d19" name="Default Changelist" comment="" />
+    <list default="true" id="656ffd28-1762-4f89-bdbc-5740650f5d19" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ChatServiceClientImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ChatServiceClientImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui$enterServerButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui$enterServerButtonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui$sendMessageButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui$sendMessageButtonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +23,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1bJ2Smdly2pHZjJpHzTRYCt2N4H" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -23,6 +35,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -119,12 +132,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588335877252</updated>
-      <workItem from="1588416620405" duration="11907000" />
+      <workItem from="1588416620405" duration="14729000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="-1288" y="-850" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588359447284">
@@ -206,50 +230,56 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/gui.java</url>
-          <line>124</line>
+          <line>126</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/gui.java</url>
-          <line>68</line>
+          <line>71</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/gui.java</url>
-          <line>134</line>
+          <line>148</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/gui.java</url>
-          <line>119</line>
+          <line>121</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/gui.java</url>
-          <line>141</line>
+          <line>154</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/gui.java</url>
           <line>44</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/gui.java</url>
           <line>47</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/gui.java</url>
-          <line>57</line>
+          <line>60</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/gui.java</url>
-          <line>85</line>
+          <line>88</line>
           <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/gui.java</url>
+          <line>38</line>
+          <properties field="receivedMessages" class="gui" />
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
