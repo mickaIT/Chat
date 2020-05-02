@@ -4,7 +4,7 @@ import java.util.List;
 
 public class MessageStorage {
 
-    public static HashMap addNewUser (String id, HashMap<String, List<String>> users){
+    public static HashMap addNewUser(String id, HashMap<String, List<String>> users){
         List <String> messagesOfUser = new ArrayList<>();
         users.put(id, messagesOfUser);
         return users;
